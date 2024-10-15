@@ -3,6 +3,7 @@
     <head>
         <title>Экскурсии по Санкт-Петербургу</title>
         <meta charset="utf=8">
+        <link rel="stylesheet" href="styles.css"> 
     </head>
     <body>
         <header>
@@ -176,11 +177,11 @@
          <section>
                 <form>
                     <select name="tariff" id="tariff">
-                            <label for="tariff">Выберите тариф</label>
-                            <option value="economy">Эконом</option>
-                            <option value="komfort">Комфорт</option>
-                            <option value="komfort">Премиум</option>
-                            <option value="luxury">Люкс</option>
+                        <label for="tariff">Выберите тариф</label>
+                        <option value="economy">Эконом</option>
+                        <option value="komfort">Комфорт</option>
+                        <option value="komfort">Премиум</option>
+                        <option value="luxury">Люкс</option>
                     </select>
                 </form>
                 <aside>
@@ -221,11 +222,11 @@
      </footer>
 
      <script>
-        const checkboxes = document.querySelectorAll('input[name="services"]');
-        const totalPriceElement = document.getElementById('total-price');
+         const checkboxes = document.querySelectorAll('input[name="services"]');
+         const totalPriceElement = document.getElementById('total-price');
     
-        checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => {
+         checkboxes.forEach(checkbox => {
+         checkbox.addEventListener('change', () => {
             let totalPrice = 0;
             checkboxes.forEach(checkbox => {
             if (checkbox.checked) {
